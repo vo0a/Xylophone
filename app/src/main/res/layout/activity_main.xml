@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <TextView
+            android:text="도"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:id="@+id/do1" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp" android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/white" android:background="@android:color/holo_red_dark"
+            android:gravity="center" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/re"
+            app:layout_constraintHorizontal_chainStyle="spread"/>
+    <TextView
+            android:text="레"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:id="@+id/re" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="24dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="24dp" android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:background="@android:color/holo_orange_dark" android:gravity="center"
+            app:layout_constraintVertical_bias="0.0" app:layout_constraintStart_toEndOf="@+id/do1"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/mi"
+            android:textColor="@android:color/white"/>
+    <TextView
+            android:text="미"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:id="@+id/mi" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="32dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="32dp" android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:gravity="center"
+            android:background="@android:color/holo_orange_light" app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/re" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/fa" android:textColor="@android:color/white"/>
+    <TextView
+            android:text="파"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:id="@+id/fa" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="40dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="40dp" android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:background="@android:color/holo_green_light" android:gravity="center"
+            app:layout_constraintVertical_bias="0.0" app:layout_constraintStart_toEndOf="@+id/mi"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/sol"
+            android:textColor="@android:color/white"/>
+    <TextView
+            android:text="솔"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:id="@+id/sol" android:gravity="center"
+            android:background="@android:color/holo_blue_light" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="48dp" android:layout_marginBottom="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/fa" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/la" android:textColor="@android:color/white"/>
+    <TextView
+            android:text="라"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:id="@+id/la" android:gravity="center"
+            android:background="@android:color/holo_blue_dark" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="56dp" android:layout_marginBottom="56dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/sol" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/si" android:textColor="@android:color/white"/>
+    <TextView
+            android:text="시"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:id="@+id/si" android:gravity="center"
+            android:background="@android:color/holo_purple" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="64dp" android:layout_marginBottom="64dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/la" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/do2" android:textColor="@android:color/white"/>
+    <TextView
+            android:text="도"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:id="@+id/do2" android:gravity="center"
+            android:background="@android:color/holo_red_dark" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="72dp" android:layout_marginBottom="72dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/si" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent" android:textColor="@android:color/white"/>
+</android.support.constraint.ConstraintLayout>
